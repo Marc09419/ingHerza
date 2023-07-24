@@ -1,0 +1,9 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a, li, span,p{
+    font-family: 'Oswald', sans-serif;
+}

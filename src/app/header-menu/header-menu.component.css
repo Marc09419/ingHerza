@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(242, 235, 235);
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+ }
+
+ button{
+   background: transparent;
+   border: none;
+ }
+
+ .logo{
+   height: 100%;
+   width: 100%;
+   display: flex;
+   justify-content: unset;
+   align-items: center;
+ }
+
+.imgLogo{
+   margin-top: 0px;
+   height: 100%;
+   object-fit: none;
+   width: 77%;
+}
+
+ nav{
+    height: 6.5rem;
+    width: 100vw;
+    /* background-image: linear-gradient(to right top, #d3e1e2, #d9e5e8, #e0e9ed, #e7edf2, #eef1f6); */
+    background:#121111df;
+    box-shadow: 10px -5px 11px 21px rgb(254 248 248 / 20%);
+    display: flex;
+    z-index: 10;
+ }
+ 
+ /*Styling logo*/
+
+ 
+ /*Styling Links*/
+ .nav-links{
+    display: flex;
+    list-style: none; 
+    justify-content: end;
+    margin-right: 20px;
+    width: 100%;
+    padding: 0 0.7vw;
+    align-items: center;
+    text-transform: uppercase;
+ }
+
+ .nav-links li button{
+    text-decoration: none;
+    margin: 0 0.7vw;
+ }
+ .nav-links li button:hover {
+    color: #61DAFB;
+ }
+ .nav-links li {
+    position: relative;
+ }
+ .nav-links li a:hover::before{
+    width: 80%;
+ }
+ 
+ /*Styling Buttons*/
+ .login-button{
+    background-color: transparent;
+    border: 1.5px solid #f2f5f7;
+    border-radius: 2em;
+    padding: 0.6rem 0.8rem;
+    margin-left: 2vw;
+    font-size: 1rem;
+    cursor: pointer;
+ 
+ }
+ .login-button:hover {
+    color: #131418;
+    background-color: #f2f5f7;
+    border:1.5px solid #f2f5f7;
+    transition: all ease-in-out 350ms;
+ }
+ .join-button{
+    color: #131418;
+    background-color: #61DAFB;
+    border: 1.5px solid #61DAFB;
+    border-radius: 2em;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+ }
+ .join-button:hover {
+    color: #f2f5f7;
+    background-color: transparent;
+    border:1.5px solid #f2f5f7;
+    transition: all ease-in-out 350ms;
+ }
+ 
+ /*Styling Hamburger Icon*/
+ .hamburger div{
+    width: 30px;
+    height:3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+ }
+ .hamburger{
+    display: none;
+ }
+ 
+ /*Stying for small screens*/
+ @media screen and (max-width: 830px){
+    nav{
+        position: fixed;
+        z-index: 3;
+    }
+    .hamburger{
+        display:block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.3s ease;
+        color: rgb(255, 255, 255);
+    }
+
+    .nav-links li button{
+      text-decoration: none;
+      margin: 0 0.7vw;
+      color: white;
+   }
+
+    .nav-links{
+        margin-top: -10px;
+        position: fixed;
+        background: #131418;
+        height: 105vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 0.7s ease-out;
+        pointer-events: none;
+        justify-content: space-evenly;
+    }
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links li{
+        /* opacity: 0; */
+    }
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.7s;
+    }
+    .nav-links li:nth-child(5){
+        transition: all 0.5s ease 0.8s;
+    }
+    .nav-links li:nth-child(6){
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+    .nav-links li:nth-child(7){
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+    li.fade{
+        opacity: 1;
+    }
+ }
+ /*Animating Hamburger Icon on Click*/
+ .toggle .line1{
+   background: white!important;
+    transform: rotate(-45deg) translate(-5px,6px);
+ }
+ .toggle .line2{
+   background: white!important;
+    transition: all 0.7s ease;
+    width:0;
+ }
+ .toggle .line3{
+   background: white!important;
+    transform: rotate(45deg) translate(-5px,-6px);
+ }
+ 

@@ -1,0 +1,82 @@
+.container {
+    height: 100%;
+    margin-top: 15px;
+}
+
+.informacion {
+    height: 185px;
+    max-height: 188px;
+}
+
+.divIcon {
+    flex: 1;
+}
+
+.rowPrincipal {
+    height: 100%;
+}
+
+.rowSecondary {
+    height: 100%;
+    flex: 1;
+}
+
+.col {
+    height: 100%;
+}
+
+.colCard {
+    border-radius: 50px;
+    background: #ffffff00;
+    ;
+    /* box-shadow:  20px 20px 60px #bebebe,-20px -20px 60px #ffffff; */
+    box-shadow: inset 20px 20px 60px #d0d0d0,
+        inset -20px -20px 60px #ffffff;
+    margin-right: 15px;
+    display: flex;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: serif;
+}
+
+.txtTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.colCard:hover {
+    translate: 0% -9%;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+form {
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.formContact input {
+    display: flex;
+    /* margin-right: 10px; */
+    border: 1px solid #ccc;
+    border-color: #d4d7e5;
+}
+
+.btnSave {
+    width: 15%;
+}
+
+.inputForm{
+    margin-left: 30px;
+}
